@@ -1,0 +1,41 @@
+body {
+  background: linear-gradient(to right, #2a3035, #171a1d);
+  height: 100%;
+  width: calc(100%-10px);
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: hsl(210, 12%, 15%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: hsl(210, 12%, 30%);
+  border-radius: 5em;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(210, 12%, 40%);
+}

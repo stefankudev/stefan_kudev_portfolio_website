@@ -1,0 +1,19 @@
+.contactButton {
+  border: none;
+  border-radius: 99em;
+  width: 5rem;
+  height: 5rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2em;
+  background: #39a4cf;
+  transform: scale(1);
+  transition: 0.2s all ease;
+}
+.contactButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+  transition: 0.2s all ease;
+  background: #36c2c3;
+}
