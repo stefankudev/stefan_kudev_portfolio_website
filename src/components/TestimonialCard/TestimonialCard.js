@@ -2,9 +2,9 @@ import css from "./TestimonialCard.module.css";
 var cn = require("classnames");
 
 export default function TestimonialCard({
-  name = "Dirk Grizzly",
-  jobTitle = "Superstar Developer",
-  testimonial = "Stefan helped sort our our back end in no time",
+  name = "Firstname Lastname",
+  jobTitle = "Job Title",
+  testimonial = "Testimonial text goes here. Lorem ipsum testimonial sit amet, constructor anti-phishing leet.",
   photo = "null",
 }) {
   return (

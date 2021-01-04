@@ -1,5 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&family=Roboto:wght@400;700&display=swap");
+
+html {
+  min-height: 100%;
+}
+
 body {
-  background: linear-gradient(to right, #2a3035, #171a1d);
+  background: linear-gradient(90deg, #2a3035, #171a1d);
+  background-size: calc(100vw) 100%;
   height: 100%;
   width: calc(100%-10px);
   overflow-x: hidden;
@@ -17,6 +24,7 @@ h6 {
 main {
   padding: 20px;
   font-family: "Roboto", sans-serif;
+  min-width: 35rem !important;
 }
 
 /* width */
