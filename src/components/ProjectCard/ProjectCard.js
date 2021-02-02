@@ -28,13 +28,17 @@ import JiraLogo from "./logos/jira.svg";
 import GolangLogo from "./logos/gopher.svg";
 import PythonLogo from "./logos/python.svg";
 
+// Placeholder Thumbnail
+import placeholderThumbnail from "./placeholder_thumbnail.png";
+
 import css from "./ProjectCard.module.css";
 var cn = require("classnames");
 
 export default function ProjectCard({
   title = "Sample Project",
   description = "Short project description, briefly describing the problem, the justification for the chosen tech stack, and the result. The better this is explained, the clearer the employer/client can perceive the ROI.",
-  thumbnail = "https://designshack.net/wp-content/uploads/placeholder-image.png",
+  video = false,
+  thumbnail = placeholderThumbnail,
   techStack = [
     "html",
     "css",
@@ -65,7 +69,7 @@ export default function ProjectCard({
     "golang",
     "python",
   ],
-  externalURL,
+  links = [{ url: "#", linkTitle: "Sample link" }],
 }) {
   const techStackLogos = {
     html: Html5Logo,
@@ -98,28 +102,51 @@ export default function ProjectCard({
     python: PythonLogo,
   };
   return (
-    <a href={externalURL ? externalURL : null}>
-      <article className={cn(css.card)}>
+    <article className={cn(css.card)}>
+      {video ? (
+        <a
+          className={cn(css.projectThumbnailLink)}
+          href={links[0].url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <video
+            className={cn(css.projectThumbnail)}
+            autoPlay
+            muted
+            loop
+            src={video}
+            type="video/webm"
+            poster={thumbnail}
+          />
+        </a>
+      ) : (
         <img
-          className={cn(css.projectImg)}
+          className={cn(css.projectThumbnail)}
           alt={"Showcase image for " + title + " project"}
           src={thumbnail}
         ></img>
-        <div className={cn(css.descriptionArea)}>
-          <h4>{title}</h4>
-          <p>{description}</p>
-          {techStack.map((techName) =>
-            techName in techStackLogos ? (
-              <img
-                className={cn(css.techStackLogo)}
-                src={techStackLogos[techName]}
-                alt={techName + " logo"}
-              />
-            ) : null
-          )}
-          <br />
+      )}
+      <div className={cn(css.descriptionArea)}>
+        <h4>{title}</h4>
+        <p>{description}</p>
+        {techStack.map((techName) =>
+          techName in techStackLogos ? (
+            <img
+              className={cn(css.techStackLogo)}
+              src={techStackLogos[techName]}
+              alt={techName}
+            />
+          ) : null
+        )}
+        <div className={cn(css.linksArea)}>
+          {links.map((el) => (
+            <a href={el.url} target="_blank" rel="noreferrer">
+              {el.linkTitle} &rarr;
+            </a>
+          ))}
         </div>
-      </article>
-    </a>
+      </div>
+    </article>
   );
 }

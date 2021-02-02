@@ -1,3 +1,38 @@
+.testimonialCard {
+  display: flex;
+}
+
+.flexItem {
+  padding: 12px;
+}
+
+.testimonialImg {
+  height: 125px;
+  border-radius: 999em;
+  pointer-events: none;
+}
+
+.testimonialJobTitle {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1em !important;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonialText {
+  line-height: 1.5rem;
+  text-align: justify;
+  padding-right: 10px;
+  font-size: 1.1em;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.testimonialText b {
+  color: rgba(255, 255, 255, 1);
+}
+
 .card {
   margin: 15px auto;
   padding: 15px;
@@ -16,5 +51,4 @@
   transition: 0.2s all ease;
   opacity: 1;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.03);
-  cursor: pointer;
 }
