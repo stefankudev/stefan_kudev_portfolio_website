@@ -12,24 +12,32 @@
   transition: 0.2s all ease;
 }
 
-.card:hover {
-  transition: 0.2s all ease;
-  opacity: 1;
-  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.05);
-  transform: scale(1.03);
-  cursor: pointer;
-}
-
 h4 {
   letter-spacing: 0.9px;
   font-size: 1.75em;
   margin: 3px 0px;
 }
 
-.projectImg {
-  height: 150px;
+.projectThumbnail {
+  height: 210px;
   float: left;
   border-radius: 0.5em;
+}
+
+.projectThumbnailLink {
+  opacity: 0.8;
+  display: inline-block;
+  margin: 15px !important;
+  padding: 0px !important;
+  border: none !important;
+  transform: scale(0.98);
+  transition: all 0.5s ease !important;
+}
+
+.projectThumbnailLink:hover {
+  opacity: 1;
+  transform: scale(1.02);
+  box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.25) !important;
 }
 
 .descriptionArea {
@@ -51,4 +59,26 @@ h4 {
   width: 2em;
   height: 2em;
   border-radius: 0.5em;
+}
+
+.linksArea {
+  margin: 25px 0px;
+}
+
+.card a {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  background: none;
+  font-size: 1em;
+  margin: 0px 5px;
+  text-decoration-color: rgba(255, 255, 255, 0);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+}
+
+.card a:hover {
+  transition: 0.2s all ease;
+  background: rgba(255, 255, 255, 0.3);
+  text-decoration-color: rgba(255, 255, 255, 1);
 }
