@@ -1,5 +1,4 @@
 import Card from "../../components/Card/Card.js";
-import UnderConstruction from "../../components/UnderConstruction/UnderConstruction.js";
 
 // CSS
 import css from "./Talks.module.css";
@@ -12,16 +11,15 @@ const MyTechTalks = [
     date: "25 February 2021",
   },
   {
-    title: "TBC",
+    title: "Getting started with Chocolatey for Windows",
     location: "Fusion ⚡ Lightning Talks",
-    date: "March 2021",
+    date: "11 March 2021",
   },
 ];
 
 export default function Talks() {
   return (
     <Card title="Tech Talks" titleSeperator>
-      <UnderConstruction />
       {MyTechTalks.map((talk) => (
         <Card>
           <h4 className={cn(css.talkTitle)}>{talk.title}</h4>

@@ -5,6 +5,7 @@ var cn = require("classnames");
 export default function TitleCard({
   availability = true,
   preferredWork = ["Full Time Roles", "Part Time Roles", "Freelance Work"],
+  tagline = "It's in the name",
 }) {
   return (
     <div className={cn(css.special, css.card)}>
@@ -16,7 +17,7 @@ export default function TitleCard({
       <h1>
         Stefan Ku<em>dev</em>
       </h1>
-      <h2>It's in the name</h2>
+      <h2>{tagline}</h2>
       <hr className={cn(css.fancyHr)} />
       <div className={cn(css.titleCardParagraphs)}>
         <p>
@@ -28,11 +29,12 @@ export default function TitleCard({
               </span>
             ) : (
               <span>
-                <span id={cn(css.unavailable)}>❌ unavailable</span> for dev
-                work!
+                <span id={cn(css.unavailable)}>❌ unavailable</span> for full
+                time roles.
                 <br />
                 <br />
-                Hit the 💬 button if you'd like to discuss my availability.
+                Hit the 💬 button if you'd like me to get involved in an
+                event/talk, freelance project, or anything else exciting!
               </span>
             )}
           </span>

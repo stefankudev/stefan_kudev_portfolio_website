@@ -56,22 +56,22 @@ const MyHobbies = [
       <>(pls don’t ask me how much I’ve gained in these lockdowns, lol)</>,
     ],
   },
-  {
-    name: "🧩 Other Fun Stuff",
-    content: [
-      <>
-        I made a rap about the fetch() API with some of my friends from School
-        of Code
-      </>,
-      <a
-        href="https://soundcloud.com/stefankudev/its-fetch"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Listen to it here!
-      </a>,
-    ],
-  },
+  // {
+  //   name: "🧩 Other Fun Stuff",
+  //   content: [
+  //     <>
+  //       I made a rap about the fetch() API with some of my friends from School
+  //       of Code
+  //     </>,
+  //     <a
+  //       href="https://soundcloud.com/stefankudev/its-fetch"
+  //       target="_blank"
+  //       rel="noreferrer"
+  //     >
+  //       Listen to it here!
+  //     </a>,
+  //   ],
+  // },
 ];
 
 export default function Hobbies() {

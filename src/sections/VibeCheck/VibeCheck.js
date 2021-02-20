@@ -17,14 +17,20 @@ export default function VibeCheck({ codeWarsBadgeSize = "large" }) {
       <hr className={cn(css.fancyHr)} />
       <Card style={{ opacity: "25%" }}>
         <div className={cn(css.imageWrapper)}>
-          <img
-            id={css.codewarsImgEmbed}
-            src={
-              "https://www.codewars.com/users/stefan_kudev/badges/" +
-              codeWarsBadgeSize
-            }
-            alt="Stefan Kudev's score on Codewars"
-          />
+          <a
+            href="https://www.codewars.com/users/stefan_kudev"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              id={css.codewarsImgEmbed}
+              src={
+                "https://www.codewars.com/users/stefan_kudev/badges/" +
+                codeWarsBadgeSize
+              }
+              alt="Stefan Kudev's score on Codewars"
+            />
+          </a>
           <img
             id={css.psIQimageEmbed}
             src={pluralSightIQ}

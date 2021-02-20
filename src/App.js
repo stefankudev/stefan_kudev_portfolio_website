@@ -30,17 +30,18 @@ function App() {
 
       <main className={contactActive ? cn(css.blur) : null}>
         <TitleCard
-          availability={true}
-          preferredWork={[
-            "Full Stack Developer Roles",
-            "Front End Developer Roles",
-            "Freelance/Contract Work",
-          ]}
+          availability={false}
+          tagline="Front End Software Engineer at Iternal"
+          // preferredWork={[
+          //   "Full Stack Developer Roles",
+          //   "Front End Developer Roles",
+          //   "Freelance/Contract Work",
+          // ]}
         />
         <VibeCheck codeWarsBadgeSize="large" />
         <Projects />
-        <Testimonials />
         <Talks />
+        <Testimonials />
         <Hobbies />
         <section className={cn(css.pageEnd)}>
           You've reached the end!
