@@ -64,6 +64,8 @@ export default function ProjectCard({
     "figma",
     "adobephotoshop",
     "adobeillustrator",
+    "adobepremierepro",
+    "adobeaftereffects",
     "trello",
     "Jira",
     "golang",
@@ -121,11 +123,18 @@ export default function ProjectCard({
           />
         </a>
       ) : (
-        <img
-          className={cn(css.projectThumbnail)}
-          alt={"Showcase image for " + title + " project"}
-          src={thumbnail}
-        ></img>
+        <a
+          className={cn(css.projectThumbnailLink)}
+          href={links[0].url}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            className={cn(css.projectThumbnail)}
+            alt={"Showcase image for " + title + " project"}
+            src={thumbnail}
+          ></img>
+        </a>
       )}
       <div className={cn(css.descriptionArea)}>
         <h4>{title}</h4>

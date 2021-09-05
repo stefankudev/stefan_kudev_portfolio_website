@@ -1,11 +1,11 @@
 // Components
 import Card from "../../components/Card/Card";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import MoreComingSoon from "../../components/MoreComingSoon/MoreComingSoon.js";
 
 // Project Images
 import PowAgileVideo from "./projectImages/powagile/powagile.webm";
 import PowAgileThumb from "./projectImages/powagile/powagile.jpg";
+import IternalThumb from "./projectImages/iternal/iternal.jpg";
 
 export default function Projects() {
   return (
@@ -17,7 +17,6 @@ export default function Projects() {
         description="In a team of 5, we built a robust platform for facilitating agile ceremonies remotely...
       And we did it in just 4 weeks."
         techStack={[
-          "js",
           "react",
           "nodejs",
           "mongoDB",
@@ -25,8 +24,6 @@ export default function Projects() {
           "git",
           "github",
           "figma",
-          "adobephotoshop",
-          "trello",
           "Jira",
         ]}
         links={[
@@ -44,7 +41,29 @@ export default function Projects() {
           },
         ]}
       />
-      <MoreComingSoon moreWhat="projects" />
+      <ProjectCard
+        thumbnail={IternalThumb}
+        title="Iternal - Be Remembered"
+        description="Iternal is a platform dedicated to preserving your legacy, helping you upload your most cherished memories and share them with friends and family."
+        techStack={[
+          "react",
+          "nodejs",
+          "mongoDB",
+          "heroku",
+          "git",
+          "github",
+          "figma",
+          "adobephotoshop",
+          "adobeillustrator",
+          "trello",
+        ]}
+        links={[
+          {
+            url: "https://iternal.app/sign-up",
+            linkTitle: "Sign up",
+          },
+        ]}
+      />
     </Card>
   );
 }
