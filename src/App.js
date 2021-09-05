@@ -31,12 +31,12 @@ function App() {
       <main className={contactActive ? cn(css.blur) : null}>
         <TitleCard
           availability={false}
-          tagline="Front End Software Engineer at Iternal"
-          // preferredWork={[
-          //   "Full Stack Developer Roles",
-          //   "Front End Developer Roles",
-          //   "Freelance/Contract Work",
-          // ]}
+          tagline="Front End Dev at Kingsbridge Group"
+        // preferredWork={[
+        //   "Full Stack Developer Roles",
+        //   "Front End Developer Roles",
+        //   "Freelance/Contract Work",
+        // ]}
         />
         <VibeCheck codeWarsBadgeSize="large" />
         <Projects />
