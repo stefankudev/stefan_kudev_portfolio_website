@@ -7,7 +7,8 @@
 }
 
 .testimonialImg {
-  height: 125px;
+  height: 125px !important;
+  width: 125px !important;
   border-radius: 999em;
   pointer-events: none;
 }

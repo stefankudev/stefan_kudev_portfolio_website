@@ -1,5 +1,6 @@
-// React
-// import { useState, useEffect } from "react";
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 // Components
 import Card from "../../components/Card/Card";
@@ -170,6 +171,8 @@ const MyTestimonials = [
   },
 ];
 
+const VisibleTestimonials = MyTestimonials.filter(el => el.visible)
+
 export default function Testimonials() {
   // const [current, set] = useState(0);
 
@@ -187,12 +190,14 @@ export default function Testimonials() {
 
   return (
     <Card title="Testimonials" titleSeperator>
-      {MyTestimonials.map((testimonial) =>
-        testimonial.visible ? <TestimonialCard {...testimonial} /> : null
-      )}
-      {/* {MyTestimonials[current].visible ? (
-        <TestimonialCard {...MyTestimonials[current]} />
-      ) : null} */}
+      <Carousel autoPlay interval={5000} infiniteLoop stopOnHover emulateTouch showArrows={false} showStatus={false} showThumbs={false}  >
+        {VisibleTestimonials.map((testimonial) =>
+          <div style={{ padding: '0.75rem' }}>
+            <TestimonialCard {...testimonial} />
+            <br />
+          </div>
+        )}
+      </Carousel>
     </Card>
   );
 }
