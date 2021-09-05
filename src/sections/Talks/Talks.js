@@ -1,4 +1,5 @@
 import Card from "../../components/Card/Card.js";
+import MoreComingSoon from '../../components/MoreComingSoon/MoreComingSoon.js'
 
 // CSS
 import css from "./Talks.module.css";
@@ -27,6 +28,7 @@ export default function Talks() {
           <date className={cn(css.talkDate)}>📅 {talk.date}</date>
         </Card>
       ))}
+      <MoreComingSoon moreWhat="talks" />
     </Card>
   );
 }
