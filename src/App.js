@@ -31,7 +31,7 @@ function App() {
       <main className={contactActive ? cn(css.blur) : null}>
         <TitleCard
           availability={false}
-          tagline="Front End Dev at Kingsbridge Group"
+          tagline="Full Stach Dev at Kingsbridge"
         // preferredWork={[
         //   "Full Stack Developer Roles",
         //   "Front End Developer Roles",
