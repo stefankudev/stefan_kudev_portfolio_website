@@ -10,7 +10,7 @@ ___
 
 Want to talk to me about a project or position?
 
-Go to [https://www.stefan-ku.dev/](stefan-ku.dev) for my contact information.
+Go to [stefan-ku.dev](https://www.stefan-ku.dev/) for my contact information.
 
 ___
 
