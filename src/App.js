@@ -8,8 +8,9 @@ import Hobbies from "./sections/Hobbies/Hobbies.js";
 import ContactDetails from "./sections/ContactDetails/ContactDetails.js";
 
 // CSS
-// import css from "./App.module.css";
-// const cn = require("classnames");
+import css from "./App.module.css";
+
+const cn = require("classnames");
 
 function App() {
     return (
@@ -29,9 +30,10 @@ function App() {
             <CommunityWork/>
             <Testimonials/>
             <Hobbies/>
-            <ContactDetails/>
+            <footer className={cn(css.footer)}>
+                <ContactDetails/>
+            </footer>
         </main>
-
     );
 }
 
