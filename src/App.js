@@ -17,7 +17,7 @@ function App() {
         <main>
             <TitleCard
                 tagline="Full Stack Web Developer"
-                showAvailability={true}
+                showAvailability={false}
                 preferredWork={[
                     "Full Stack Web Developer Roles",
                     "Front End Web Developer Roles",
